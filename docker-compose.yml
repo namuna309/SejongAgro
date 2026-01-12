@@ -1,0 +1,7 @@
+services:
+  web:
+    build:
+      context: ./sejongagro-web
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
