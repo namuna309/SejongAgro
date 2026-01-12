@@ -1,0 +1,11 @@
+[
+  {
+    "id": "P-102938",
+    "name": "고추 전용 비료 20kg",
+    "images": [{ "src": "/images/products/p1.jpg", "alt": "고추 전용 비료" }],
+    "price": { "sale": 21900, "original": 25900, "currency": "KRW" },
+    "badges": ["BEST", "SALE"],
+    "stats": { "rating": 4.7, "reviewCount": 132 },
+    "href": "/product/P-102938"
+  }
+]

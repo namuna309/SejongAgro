@@ -1,0 +1,54 @@
+{
+  "meta": { "version": "1.0.0", "locale": "ko-KR" },
+  "sections": [
+    {
+      "type": "heroCarousel",
+      "id": "hero",
+      "props": {
+        "autoplayMs": 4000,
+        "items": [
+          {
+            "id": "b1",
+            "image": { "src": "/images/banners/b1.jpg", "alt": "방제 시즌 특가" },
+            "title": "방제 시즌 특가",
+            "subtitle": "필수 농약/방제기 모음",
+            "href": "/event/pest-control"
+          }
+        ]
+      }
+    },
+    {
+      "type": "quickLinks",
+      "id": "quick",
+      "props": {
+        "items": [
+          { "id": "q1", "label": "베스트", "icon": "award", "href": "/best" },
+          { "id": "q2", "label": "신상품", "icon": "sparkles", "href": "/new" }
+        ]
+      }
+    },
+    {
+      "type": "categoryGrid",
+      "id": "cats",
+      "props": {
+        "title": "카테고리",
+        "items": [
+          { "id": "cat1", "label": "비료/퇴비", "image": "/images/cat/fertilizer.jpg", "href": "/category/fertilizer" },
+          { "id": "cat2", "label": "종자/육묘", "image": "/images/cat/seed.jpg", "href": "/category/seed" }
+        ]
+      }
+    },
+    { "type": "promoStrip", "id": "strip", "props": { "items": [{ "id": "p1", "label": "무료배송", "desc": "조건 충족 시", "href": "/shipping" }] } },
+    {
+      "type": "productShelf",
+      "id": "best",
+      "props": { "title": "베스트", "moreHref": "/best", "query": { "kind": "BEST", "limit": 8 } }
+    },
+    {
+      "type": "productShelf",
+      "id": "new",
+      "props": { "title": "신상품", "moreHref": "/new", "query": { "kind": "NEW", "limit": 8 } }
+    },
+    { "type": "noticeFaq", "id": "help", "props": { "tabs": [{ "id": "notice", "label": "공지", "limit": 5 }, { "id": "faq", "label": "FAQ", "limit": 5 }] } }
+  ]
+}
