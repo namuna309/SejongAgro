@@ -1,0 +1,27 @@
+.wrap {
+  display: flex;
+  align-items: center;
+  border: 2px solid var(--brand);
+  border-radius: 999px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.input {
+  flex: 1;
+  border: 0;
+  outline: none;
+  padding: 12px 14px;
+  font-size: 14px;
+  min-width: 0;
+}
+
+.btn {
+  border: 0;
+  background: var(--brand);
+  color: white;
+  padding: 0 16px;
+  height: 40px;
+  font-weight: 800;
+  cursor: pointer;
+}

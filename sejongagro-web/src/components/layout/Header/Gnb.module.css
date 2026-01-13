@@ -1,0 +1,82 @@
+.gnb {
+  background: var(--bg);
+  border-bottom: 1px solid var(--line);
+}
+
+.row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 0;
+}
+
+/* 전체카테고리 영역 */
+.allWrap {
+  position: relative;
+}
+
+.allBtn {
+  border: 1px solid var(--line);
+  background: white;
+  border-radius: 10px;
+  padding: 8px 12px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+/* 기본: dropdown은 absolute로 떠야 쇼핑몰 느낌 */
+.dropdown {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: calc(100% + 10px);
+  width: min(720px, calc(100vw - 32px));
+  z-index: 30;
+}
+
+.open { display: block; }
+
+.grid {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: white;
+  box-shadow: var(--shadow-sm);
+  padding: 12px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.cat {
+  padding: 10px;
+  border-radius: 10px;
+  background: var(--soft);
+  font-weight: 700;
+}
+
+/* 오른쪽 링크 */
+.links {
+  display: flex;
+  gap: 14px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* 모바일에서는 dropdown이 아래에 “block”처럼 자연스럽게 나오게 */
+@media (max-width: 1023px) {
+  .row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .dropdown {
+    position: static;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

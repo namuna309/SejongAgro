@@ -1,0 +1,22 @@
+[
+  {
+    "id": "P-102938",
+    "name": "고추 전용 비료 20kg",
+    "images": [{ "src": "/images/products/p1.jpg", "alt": "고추 전용 비료" }],
+    "price": { "sale": 21900, "original": 25900, "currency": "KRW" },
+    "badges": ["BEST", "SALE"],
+    "tags": ["BEST"],
+    "stats": { "rating": 4.7, "reviewCount": 132 },
+    "href": "/product/P-102938"
+  },
+  {
+    "id": "P-200001",
+    "name": "신상품 테스트 1",
+    "images": [{ "src": "/images/products/p2.jpg", "alt": "신상품" }],
+    "price": { "sale": 9900, "original": 9900, "currency": "KRW" },
+    "badges": ["NEW"],
+    "tags": ["NEW"],
+    "stats": { "rating": 4.2, "reviewCount": 12 },
+    "href": "/product/P-200001"
+  }
+]

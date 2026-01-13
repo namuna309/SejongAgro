@@ -1,10 +1,11 @@
-type Props = {
-  autoplayMs?: number;
-  items: { id: string; image?: { src: string; alt: string }; title?: string; subtitle?: string; href?: string }[];
-};
+import { dataStore } from "../../api/dataStore";
 
-export default function HeroCarousel({ items }: Props) {
-  const first = items?.[0];
+type Props = { bannerIds: string[]; autoplayMs?: number };
+
+export default function HeroCarousel({ bannerIds }: Props) {
+  const items = dataStore.banners.filter((b) => bannerIds.includes(b.id));
+  const first = items[0];
+
   return (
     <section style={{ padding: 16 }}>
       <div style={{ borderRadius: 12, border: "1px solid #e5e7eb", padding: 16 }}>

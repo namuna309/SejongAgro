@@ -1,0 +1,14 @@
+{
+  "meta": { "version": "1.0.0", "locale": "ko-KR" },
+  "sections": [
+    { "type": "heroCarousel", "id": "hero", "props": { "bannerIds": ["b1"], "autoplayMs": 4000 } },
+    { "type": "quickLinks", "id": "quick", "props": { "items": [
+      { "id": "q1", "label": "베스트", "icon": "award", "href": "/best" },
+      { "id": "q2", "label": "신상품", "icon": "sparkles", "href": "/new" }
+    ]}},
+    { "type": "categoryGrid", "id": "cats", "props": { "title": "카테고리", "categoryIds": ["fertilizer","seed"] } },
+    { "type": "promoStrip", "id": "strip", "props": { "items": [{ "id": "p1", "label": "무료배송", "desc": "조건 충족 시", "href": "/shipping" }] } },
+    { "type": "productShelf", "id": "best", "props": { "title": "베스트", "moreHref": "/best", "query": { "tag": "BEST", "limit": 8 } } },
+    { "type": "productShelf", "id": "new", "props": { "title": "신상품", "moreHref": "/new", "query": { "tag": "NEW", "limit": 8 } } }
+  ]
+}

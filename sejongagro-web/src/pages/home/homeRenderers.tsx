@@ -1,3 +1,4 @@
+import type { HomeSection } from "../../types/home";
 import HeroCarousel from "../../sections/HeroCarousel/HeroCarousel";
 import QuickLinks from "../../sections/QuickLinks/QuickLinks";
 import CategoryGrid from "../../sections/CategoryGrid/CategoryGrid";
@@ -5,7 +6,7 @@ import PromoStrip from "../../sections/PromoStrip/PromoStrip";
 import ProductShelf from "../../sections/ProductShelf/ProductShelf";
 import NoticeFaq from "../../sections/NoticeFaq/NoticeFaq";
 
-export function renderHomeSection(section: { type: string; id: string; props: any }) {
+export function renderHomeSection(section: HomeSection) {
   switch (section.type) {
     case "heroCarousel":
       return <HeroCarousel key={section.id} {...section.props} />;
@@ -19,7 +20,5 @@ export function renderHomeSection(section: { type: string; id: string; props: an
       return <ProductShelf key={section.id} {...section.props} />;
     case "noticeFaq":
       return <NoticeFaq key={section.id} {...section.props} />;
-    default:
-      return null;
   }
 }

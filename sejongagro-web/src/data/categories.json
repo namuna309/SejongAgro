@@ -1,0 +1,4 @@
+[
+  { "id": "fertilizer", "label": "비료/퇴비", "image": "/images/cat/fertilizer.jpg", "href": "/category/fertilizer" },
+  { "id": "seed", "label": "종자/육묘", "image": "/images/cat/seed.jpg", "href": "/category/seed" }
+]

@@ -1,0 +1,13 @@
+.footer {
+  border-top: 1px solid var(--line);
+  background: var(--soft);
+  padding: 24px 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.title {
+  font-weight: 900;
+  color: var(--text);
+  margin-bottom: 10px;
+}

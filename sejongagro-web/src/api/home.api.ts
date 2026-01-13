@@ -1,12 +1,19 @@
-import homeMock from "../mocks/home.v1.json";
-import { HomeSchema } from "../pages/home/home.types";
+import { dataStore } from "./dataStore";
+import { HomeSchemaStrict } from "../types/home";
 
 export async function fetchHome() {
-  // 나중에 실제로는 fetch("/api/home")로 교체
-  const parsed = HomeSchema.safeParse(homeMock);
+  const parsed = HomeSchemaStrict.safeParse(dataStore.home);
+
   if (!parsed.success) {
-    console.error(parsed.error.flatten());
-    throw new Error("home JSON schema validation failed");
+    console.error(
+      parsed.error.issues.map((issue) => ({
+        path: issue.path.join("."),
+        message: issue.message,
+        code: issue.code,
+      }))
+    );
+    throw new Error("home JSON schema validation failed (strict)");
   }
+
   return parsed.data;
 }

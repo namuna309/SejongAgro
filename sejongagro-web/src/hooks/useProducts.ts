@@ -1,9 +1,9 @@
 import { useQuery } from "@tanstack/react-query";
-import { fetchProducts } from "../api/products.api";
+import { fetchProductsByTag } from "../api/products.api";
 
-export function useProducts(kind: string) {
+export function useProducts(tag: string) {
   return useQuery({
-    queryKey: ["products", kind],
-    queryFn: () => fetchProducts(kind),
+    queryKey: ["products", "tag", tag],
+    queryFn: () => fetchProductsByTag(tag),
   });
 }
