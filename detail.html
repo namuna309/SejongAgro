@@ -1,0 +1,1183 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>상품상세 | 세종농자재농약마트</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="top-util-wrap">
+        <div class="inner">
+          <div class="top-util">
+            <a href="#">로그인</a>
+            <a href="#">회원가입</a>
+            <a href="#">마이페이지</a>
+            <a href="#">장바구니</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-header">
+        <div class="inner">
+          <div class="header-content">
+            <h1 class="logo">
+              <a href="index.html">
+                <img src="logo.png" alt="세종농자재농약마트 로고" />
+              </a>
+            </h1>
+
+            <div class="search-area">
+              <form class="search-box" id="searchForm">
+                <input
+                  type="text"
+                  id="searchInput"
+                  placeholder="검색어를 입력하세요"
+                />
+                <button type="submit" aria-label="검색">
+                  <img src="search.png" alt="검색" />
+                </button>
+              </form>
+            </div>
+
+            <div class="bank-area">
+              <div class="bank-icon">
+                <img src="bank_logo.png" alt="은행 로고" />
+              </div>
+              <div class="bank-text">
+                <p>세종농약농자재마트</p>
+                <p>농협: 111-2222-3333-44</p>
+              </div>
+            </div>
+
+            <div class="phone-area">
+              <span class="phone-icon">📞</span>
+              <span>044-864-2533</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav class="gnb">
+        <div class="inner">
+          <ul>
+            <li><a href="#">히트상품</a></li>
+            <li><a href="#">추천상품</a></li>
+            <li><a href="#">최신상품</a></li>
+            <li><a href="#">인기상품</a></li>
+            <li><a href="#">할인상품</a></li>
+            <li><a href="#">1:1문의</a></li>
+            <li><a href="#">사용후기</a></li>
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">오시는 길</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="products-page">
+      <div class="inner">
+        <div class="products-layout">
+          <aside class="side-category">
+            <ul class="category-menu">
+              <li class="category-item">
+                <a href="products.html?category=house">하우스 시설자재</a>
+                <ul class="subcategory-menu">
+                  <li>
+                    <a href="products.html?category=house&subcategory=pipe"
+                      >파이프 / 연결자재</a
+                    >
+                  </li>
+                  <li>
+                    <a href="products.html?category=house&subcategory=clip"
+                      >고정클립 / 부속</a
+                    >
+                  </li>
+                  <li>
+                    <a href="products.html?category=house&subcategory=film"
+                      >하우스 필름자재</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="category-item">
+                <a href="products.html?category=water">관수 / 배관 자재</a>
+                <ul class="subcategory-menu">
+                  <li>
+                    <a href="products.html?category=water&subcategory=valve"
+                      >밸브 / 코크</a
+                    >
+                  </li>
+                  <li>
+                    <a href="products.html?category=water&subcategory=fitting"
+                      >엘보 / 티 / 연결구</a
+                    >
+                  </li>
+                  <li>
+                    <a href="products.html?category=water&subcategory=hose"
+                      >호스 / 튜브</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="category-item">
+                <a href="products.html?category=tank">물탱크 / 고레통</a>
+                <ul class="subcategory-menu">
+                  <li>
+                    <a href="products.html?category=tank&subcategory=smalltank"
+                      >소형 물탱크</a
+                    >
+                  </li>
+                  <li>
+                    <a href="products.html?category=tank&subcategory=bigtank"
+                      >대형 물탱크</a
+                    >
+                  </li>
+                  <li>
+                    <a href="products.html?category=tank&subcategory=container"
+                      >고레통 / 저장용기</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="category-item">
+                <a href="products.html?category=vinyl">하우스 / 멀칭비닐</a>
+                <ul class="subcategory-menu">
+                  <li>
+                    <a
+                      href="products.html?category=vinyl&subcategory=housevinyl"
+                      >하우스 비닐</a
+                    >
+                  </li>
+                  <li>
+                    <a href="products.html?category=vinyl&subcategory=mulching"
+                      >멀칭 비닐</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="category-item">
+                <a href="products.html?category=weed">전초방지</a>
+                <ul class="subcategory-menu">
+                  <li>
+                    <a href="products.html?category=weed&subcategory=sheet"
+                      >잡초방지 시트</a
+                    >
+                  </li>
+                  <li>
+                    <a href="products.html?category=weed&subcategory=mat"
+                      >잡초방지 매트</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="category-item">
+                <a href="products.html?category=garden">원예자재</a>
+                <ul class="subcategory-menu">
+                  <li>
+                    <a href="products.html?category=garden&subcategory=support"
+                      >지지대 / 유인끈</a
+                    >
+                  </li>
+                  <li>
+                    <a href="products.html?category=garden&subcategory=pot"
+                      >화분 / 모종자재</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="category-item">
+                <a href="products.html?category=shade"
+                  >차광망 / 기타망 / 보온덮개</a
+                >
+                <ul class="subcategory-menu">
+                  <li>
+                    <a
+                      href="products.html?category=shade&subcategory=shadecloth"
+                      >차광망</a
+                    >
+                  </li>
+                  <li>
+                    <a href="products.html?category=shade&subcategory=cover"
+                      >보온덮개</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="category-item">
+                <a href="products.html?category=tools"
+                  >철물 / 공구 / 기타자재</a
+                >
+                <ul class="subcategory-menu">
+                  <li>
+                    <a href="products.html?category=tools&subcategory=hardware"
+                      >철물 자재</a
+                    >
+                  </li>
+                  <li>
+                    <a href="products.html?category=tools&subcategory=tool"
+                      >작업 공구</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="category-item">
+                <a href="products.html?category=ladder">사다리</a>
+                <ul class="subcategory-menu">
+                  <li>
+                    <a href="products.html?category=ladder&subcategory=folding"
+                      >접이식 사다리</a
+                    >
+                  </li>
+                  <li>
+                    <a href="products.html?category=ladder&subcategory=work"
+                      >작업용 사다리</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="category-item">
+                <a href="products.html?category=pest">해충 / 유해조수퇴치기</a>
+                <ul class="subcategory-menu">
+                  <li>
+                    <a href="products.html?category=pest&subcategory=insect"
+                      >해충 퇴치기</a
+                    >
+                  </li>
+                  <li>
+                    <a href="products.html?category=pest&subcategory=animal"
+                      >유해조수 퇴치기</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="category-item">
+                <a href="products.html?category=all&subcategory=all"
+                  >전체상품보기</a
+                >
+              </li>
+            </ul>
+          </aside>
+
+          <section class="product-detail-page">
+            <div class="product-detail-wrap">
+              <div class="product-detail-image-box">
+                <img
+                  src="union_valve.jpg"
+                  alt="드롭스파이크 앵글 에로우드립퍼"
+                />
+              </div>
+
+              <div class="product-detail-summary">
+                <div class="detail-breadcrumb">
+                  홈 &gt; 관수 / 배관 자재 &gt; 스프링쿨러 자재
+                </div>
+
+                <h2 class="detail-product-name">
+                  드롭스파이크 앵글 에로우드립퍼 국산 네타핌 점적단추 관수자재
+                  한솔농자재철강
+                </h2>
+
+                <div class="detail-info-table">
+                  <div class="detail-info-row">
+                    <div class="detail-info-label main">판매가</div>
+                    <div class="detail-info-value">
+                      <span class="detail-sale-price">40원</span>
+                    </div>
+                  </div>
+
+                  <div class="detail-info-row">
+                    <div class="detail-info-label">적립금</div>
+                    <div class="detail-info-value">0원</div>
+                  </div>
+
+                  <div class="detail-info-row">
+                    <div class="detail-info-label">배송비(택배)</div>
+                    <div class="detail-info-value">
+                      <div class="detail-delivery-box">
+                        <select
+                          class="detail-option-select"
+                          title="배송비 결제 방식"
+                        >
+                          <option>주문시 결제(선결제)</option>
+                        </select>
+                        <span class="detail-delivery-price">3,000원</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="detail-info-row option-row">
+                    <div class="detail-info-label">옵션 선택</div>
+                    <div class="detail-info-value">
+                      <select
+                        class="detail-option-select"
+                        id="detailOptionSelect"
+                        title="옵션 선택"
+                      >
+                        <option value="">- [필수] 옵션 선택 -</option>
+                        <option value="기본형" data-price="40">기본형</option>
+                        <option value="중형" data-price="60">중형</option>
+                        <option value="대형" data-price="80">대형</option>
+                      </select>
+                      <p class="detail-option-help">(최소주문수량 1개 이상)</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="detail-option-guide">
+                  ※ 위 옵션선택 박스를 선택하시면 아래에 상품이 추가됩니다.
+                </div>
+
+                <div class="detail-selected-list" id="detailSelectedList"></div>
+
+                <div class="detail-total-box">
+                  <span class="detail-total-text">총 상품금액(수량) :</span>
+                  <span class="detail-total-amount" id="detailTotalAmount"
+                    >0원</span
+                  >
+                  <span class="detail-total-count" id="detailTotalCount"
+                    >(0개)</span
+                  >
+                </div>
+
+                <div class="detail-action-area">
+                  <button class="detail-cart-btn" type="button">
+                    장바구니
+                  </button>
+                  <button class="detail-buy-btn" type="button">구매하기</button>
+                  <button
+                    class="detail-like-btn"
+                    type="button"
+                    aria-label="관심상품"
+                  >
+                    ♡
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="detail-tab-content-wrap">
+              <section class="detail-anchor-section" id="detail-info-section">
+                <div class="detail-tab-section">
+                  <div class="detail-tab-menu">
+                    <a href="#detail-info-section" class="detail-tab-btn active"
+                      >상품상세정보</a
+                    >
+                    <a href="#detail-review-section" class="detail-tab-btn"
+                      >상품사용후기</a
+                    >
+                    <a href="#detail-qna-section" class="detail-tab-btn"
+                      >상품Q&amp;A</a
+                    >
+                    <a href="#detail-related-section" class="detail-tab-btn"
+                      >관련상품</a
+                    >
+                    <a href="#detail-delivery-section" class="detail-tab-btn"
+                      >배송정보</a
+                    >
+                    <a href="#detail-return-section" class="detail-tab-btn"
+                      >교환 및 반품정보</a
+                    >
+                  </div>
+                </div>
+                <div class="detail-tab-inner">
+                  <p>
+                    드롭스파이크 앵글 에로우드립퍼 상품의 상세 설명이 들어가는
+                    영역입니다.
+                  </p>
+                  <p>
+                    재질, 규격, 사용방법, 제품 특징 등을 이곳에 넣으면 됩니다.
+                  </p>
+                </div>
+              </section>
+
+              <section class="detail-anchor-section" id="detail-review-section">
+                <div class="detail-tab-section">
+                  <div class="detail-tab-menu">
+                    <a href="#detail-info-section" class="detail-tab-btn"
+                      >상품상세정보</a
+                    >
+                    <a
+                      href="#detail-review-section"
+                      class="detail-tab-btn active"
+                      >상품사용후기</a
+                    >
+                    <a href="#detail-qna-section" class="detail-tab-btn"
+                      >상품Q&amp;A</a
+                    >
+                    <a href="#detail-related-section" class="detail-tab-btn"
+                      >관련상품</a
+                    >
+                    <a href="#detail-delivery-section" class="detail-tab-btn"
+                      >배송정보</a
+                    >
+                    <a href="#detail-return-section" class="detail-tab-btn"
+                      >교환 및 반품정보</a
+                    >
+                  </div>
+                </div>
+                <div class="detail-tab-inner">
+                  <div class="review-feed">
+                    <article class="review-card">
+                      <div class="review-main">
+                        <div class="review-user-row">
+                          <div class="review-user-info">
+                            <div class="review-score-row">
+                              <span class="review-stars">★★★★★</span>
+                              <span class="review-score">5</span>
+                            </div>
+                            <div class="review-meta">
+                              <span class="review-user-id">yska****</span>
+                              <span class="review-dot">·</span>
+                              <span class="review-date">24.10.01.</span>
+                              <span class="review-dot">|</span>
+                              <a href="#" class="review-report">신고</a>
+                            </div>
+                          </div>
+                        </div>
+
+                        <p class="review-option-text">
+                          두께(mm): 0.03mm / 폭(cm)×길이(m): 160x300
+                        </p>
+
+                        <div class="review-text">
+                          탄력적이고 두툼해서 좋습니다.
+                        </div>
+                      </div>
+
+                      <div class="review-side">
+                        <button
+                          type="button"
+                          class="review-like-btn"
+                          data-liked="false"
+                        >
+                          <span class="review-like-icon">👍</span>
+                          <span class="review-like-count">0</span>
+                        </button>
+                      </div>
+                    </article>
+
+                    <article class="review-card">
+                      <div class="review-main">
+                        <div class="review-user-row">
+                          <div class="review-user-info">
+                            <div class="review-score-row">
+                              <span class="review-stars">★★★★★</span>
+                              <span class="review-score">5</span>
+                            </div>
+                            <div class="review-meta">
+                              <span class="review-user-id">nara*******</span>
+                              <span class="review-dot">·</span>
+                              <span class="review-date">25.06.04.</span>
+                              <span class="review-dot">|</span>
+                              <a href="#" class="review-report">신고</a>
+                            </div>
+                          </div>
+                        </div>
+
+                        <p class="review-option-text">
+                          두께(mm): 0.03mm / 폭(cm)×길이(m): 160x300
+                        </p>
+
+                        <div class="review-text">좋아요 덕분에 잘심었어요</div>
+
+                        <div class="review-photo-viewer">
+                          <img
+                            src="review-photo1.jpg"
+                            alt="원본 리뷰 이미지"
+                            class="review-photo-viewer-img"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="review-side review-side-with-image">
+                        <div class="review-photo review-photo-trigger">
+                          <img
+                            src="review-photo1.jpg"
+                            alt="리뷰 이미지 썸네일"
+                          />
+                        </div>
+
+                        <button
+                          type="button"
+                          class="review-like-btn"
+                          data-liked="false"
+                        >
+                          <span class="review-like-icon">👍</span>
+                          <span class="review-like-count">0</span>
+                        </button>
+                      </div>
+                    </article>
+
+                    <article class="review-card">
+                      <div class="review-main">
+                        <div class="review-user-row">
+                          <div class="review-user-info">
+                            <div class="review-score-row">
+                              <span class="review-stars">★★★★★</span>
+                              <span class="review-score">5</span>
+                            </div>
+                            <div class="review-meta">
+                              <span class="review-user-id">fish***</span>
+                              <span class="review-dot">·</span>
+                              <span class="review-date">24.09.20.</span>
+                              <span class="review-dot">|</span>
+                              <a href="#" class="review-report">신고</a>
+                            </div>
+                          </div>
+                        </div>
+
+                        <p class="review-option-text">
+                          두께(mm): 0.03mm / 폭(cm)×길이(m): 160x300
+                        </p>
+
+                        <div class="review-text">
+                          매번 구매하고 있는데 맘에 듭니다.
+                        </div>
+                      </div>
+
+                      <div class="review-side">
+                        <button
+                          type="button"
+                          class="review-like-btn"
+                          data-liked="false"
+                        >
+                          <span class="review-like-icon">👍</span>
+                          <span class="review-like-count">0</span>
+                        </button>
+                      </div>
+                    </article>
+
+                    <article class="review-card">
+                      <div class="review-main">
+                        <div class="review-user-row">
+                          <div class="review-user-info">
+                            <div class="review-score-row">
+                              <span class="review-stars">★★★★★</span>
+                              <span class="review-score">5</span>
+                            </div>
+                            <div class="review-meta">
+                              <span class="review-user-id">pooh***</span>
+                              <span class="review-dot">·</span>
+                              <span class="review-date">24.09.09.</span>
+                              <span class="review-dot">|</span>
+                              <a href="#" class="review-report">신고</a>
+                            </div>
+                          </div>
+                        </div>
+
+                        <p class="review-option-text">
+                          두께(mm): 0.03mm / 폭(cm)×길이(m): 120x300
+                        </p>
+
+                        <div class="review-text">배색 필름 정말 좋습니다</div>
+                      </div>
+
+                      <div class="review-side">
+                        <button
+                          type="button"
+                          class="review-like-btn"
+                          data-liked="false"
+                        >
+                          <span class="review-like-icon">👍</span>
+                          <span class="review-like-count">0</span>
+                        </button>
+                      </div>
+                    </article>
+
+                    <div class="review-feed-pagination">
+                      <button type="button" class="review-feed-page active">
+                        1
+                      </button>
+                      <button type="button" class="review-feed-page">2</button>
+                      <button type="button" class="review-feed-next">
+                        다음 &gt;
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section class="detail-anchor-section" id="detail-qna-section">
+                <div class="detail-tab-section">
+                  <div class="detail-tab-menu">
+                    <a href="#detail-info-section" class="detail-tab-btn"
+                      >상품상세정보</a
+                    >
+                    <a href="#detail-review-section" class="detail-tab-btn"
+                      >상품사용후기</a
+                    >
+                    <a href="#detail-qna-section" class="detail-tab-btn active"
+                      >상품Q&amp;A</a
+                    >
+                    <a href="#detail-related-section" class="detail-tab-btn"
+                      >관련상품</a
+                    >
+                    <a href="#detail-delivery-section" class="detail-tab-btn"
+                      >배송정보</a
+                    >
+                    <a href="#detail-return-section" class="detail-tab-btn"
+                      >교환 및 반품정보</a
+                    >
+                  </div>
+                </div>
+                <div class="detail-tab-inner">
+                  <div class="qna-board">
+                    <div class="qna-toolbar">
+                      <div class="qna-toolbar-left">
+                        <button type="button" class="qna-btn qna-btn-dark">
+                          상품 Q&amp;A 작성하기
+                        </button>
+                      </div>
+
+                      <div class="qna-toolbar-right">
+                        <label class="qna-check-label">
+                          <input type="checkbox" id="qnaPrivateExclude" />
+                          <span>비밀글 제외</span>
+                        </label>
+
+                        <select
+                          class="qna-filter-select"
+                          id="qnaStatusFilter"
+                          title="답변상태 필터"
+                        >
+                          <option value="all">답변상태</option>
+                          <option value="done">답변완료</option>
+                          <option value="waiting">답변대기</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="qna-table">
+                      <div class="qna-table-head">
+                        <div class="qna-col-status">답변상태</div>
+                        <div class="qna-col-title">제목</div>
+                        <div class="qna-col-writer">작성자</div>
+                        <div class="qna-col-date">작성일</div>
+                      </div>
+
+                      <div class="qna-row" data-status="done">
+                        <div class="qna-col-status">답변완료</div>
+                        <div class="qna-col-title">
+                          내구성이 궁금합니다. 햇빛에 노출되는데, 내구성이 몇 년
+                          정도인가요?
+                        </div>
+                        <div class="qna-col-writer">wj****</div>
+                        <div class="qna-col-date">2026.04.12.</div>
+                      </div>
+
+                      <div class="qna-row" data-status="done">
+                        <div class="qna-col-status">답변완료</div>
+                        <div class="qna-col-title">
+                          두께 0.15 폭8m×길이12m 구매할수있나요? 가격은요?
+                        </div>
+                        <div class="qna-col-writer">jb****</div>
+                        <div class="qna-col-date">2026.02.23.</div>
+                      </div>
+
+                      <div class="qna-row" data-status="done">
+                        <div class="qna-col-status">답변완료</div>
+                        <div class="qna-col-title">
+                          이 필름도 기능성필름인가요
+                        </div>
+                        <div class="qna-col-writer">53sh****</div>
+                        <div class="qna-col-date">2025.11.26.</div>
+                      </div>
+
+                      <div
+                        class="qna-row"
+                        data-private="true"
+                        data-status="waiting"
+                      >
+                        <div class="qna-col-status">답변대기</div>
+                        <div class="qna-col-title">
+                          비밀글입니다. <span class="qna-lock">🔒</span>
+                        </div>
+                        <div class="qna-col-writer">htok*******</div>
+                        <div class="qna-col-date">2025.11.11.</div>
+                      </div>
+
+                      <div class="qna-row" data-status="done">
+                        <div class="qna-col-status">답변완료</div>
+                        <div class="qna-col-title">
+                          길이가 40m는 없는건가요? 옵션이 없네요.
+                        </div>
+                        <div class="qna-col-writer">daej******</div>
+                        <div class="qna-col-date">2025.07.21.</div>
+                      </div>
+
+                      <div class="qna-row" data-status="done">
+                        <div class="qna-col-status">답변완료</div>
+                        <div class="qna-col-title">
+                          넓이1320m 길이기 1070 하우스인데
+                          비닐사이즈몇로주문하면될까요?
+                        </div>
+                        <div class="qna-col-writer">kimh*******</div>
+                        <div class="qna-col-date">2025.07.16.</div>
+                      </div>
+
+                      <div
+                        class="qna-row"
+                        data-private="true"
+                        data-status="done"
+                      >
+                        <div class="qna-col-status">답변완료</div>
+                        <div class="qna-col-title">
+                          비밀글입니다. <span class="qna-lock">🔒</span>
+                        </div>
+                        <div class="qna-col-writer">htok*******</div>
+                        <div class="qna-col-date">2025.11.11.</div>
+                      </div>
+
+                      <div
+                        class="qna-row"
+                        data-private="true"
+                        data-status="done"
+                      >
+                        <div class="qna-col-status">답변완료</div>
+                        <div class="qna-col-title">
+                          비밀글입니다. <span class="qna-lock">🔒</span>
+                        </div>
+                        <div class="qna-col-writer">htok*******</div>
+                        <div class="qna-col-date">2025.11.11.</div>
+                      </div>
+
+                      <div class="qna-row" data-status="waiting">
+                        <div class="qna-col-status">답변대기</div>
+                        <div class="qna-col-title">
+                          안녕하세요 장수비닐 0.15mm 길이15-11 구매할수있나요?
+                        </div>
+                        <div class="qna-col-writer">whh2***</div>
+                        <div class="qna-col-date">2025.01.06.</div>
+                      </div>
+
+                      <div class="qna-row" data-status="done">
+                        <div class="qna-col-status">답변완료</div>
+                        <div class="qna-col-title">
+                          사장님 물건 이제 열어봤는데 폭이 1.5미터밖에
+                          안되는데요. 어떻게 된건가요??
+                        </div>
+                        <div class="qna-col-writer">cute***</div>
+                        <div class="qna-col-date">2024.12.26.</div>
+                      </div>
+
+                      <div class="qna-row" data-status="done">
+                        <div class="qna-col-status">답변완료</div>
+                        <div class="qna-col-title">
+                          하우스 폭이 7m인데 추천 규격이 어떻게 될까요?
+                        </div>
+                        <div class="qna-col-writer">grow***</div>
+                        <div class="qna-col-date">2024.11.30.</div>
+                      </div>
+
+                      <div class="qna-row" data-status="done">
+                        <div class="qna-col-status">답변완료</div>
+                        <div class="qna-col-title">
+                          비닐 색상 차이가 실제 작물 생육에도 영향이 있나요?
+                        </div>
+                        <div class="qna-col-writer">farm****</div>
+                        <div class="qna-col-date">2024.11.18.</div>
+                      </div>
+
+                      <div class="qna-row" data-status="done">
+                        <div class="qna-col-status">답변완료</div>
+                        <div class="qna-col-title">
+                          두께 0.1과 0.15 중 어떤 걸 더 많이 쓰나요?
+                        </div>
+                        <div class="qna-col-writer">sky****</div>
+                        <div class="qna-col-date">2024.10.29.</div>
+                      </div>
+
+                      <div
+                        class="qna-row"
+                        data-private="true"
+                        data-status="done"
+                      >
+                        <div class="qna-col-status">답변완료</div>
+                        <div class="qna-col-title">
+                          비밀글입니다. <span class="qna-lock">🔒</span>
+                        </div>
+                        <div class="qna-col-writer">htok*******</div>
+                        <div class="qna-col-date">2025.11.11.</div>
+                      </div>
+
+                      <div class="qna-row" data-status="waiting">
+                        <div class="qna-col-status">답변대기</div>
+                        <div class="qna-col-title">
+                          겨울철에도 사용 가능한 제품인지 궁금합니다.
+                        </div>
+                        <div class="qna-col-writer">win***</div>
+                        <div class="qna-col-date">2024.10.10.</div>
+                      </div>
+
+                      <div class="qna-row" data-status="done">
+                        <div class="qna-col-status">답변완료</div>
+                        <div class="qna-col-title">
+                          묶음배송 가능 여부 문의드립니다.
+                        </div>
+                        <div class="qna-col-writer">pack***</div>
+                        <div class="qna-col-date">2024.09.27.</div>
+                      </div>
+
+                      <div class="qna-row" data-status="done">
+                        <div class="qna-col-status">답변완료</div>
+                        <div class="qna-col-title">
+                          상품 재입고 일정이 있을까요?
+                        </div>
+                        <div class="qna-col-writer">agri****</div>
+                        <div class="qna-col-date">2024.09.13.</div>
+                      </div>
+
+                      <div
+                        class="qna-row"
+                        data-private="true"
+                        data-status="waiting"
+                      >
+                        <div class="qna-col-status">답변대기</div>
+                        <div class="qna-col-title">
+                          비밀글입니다. <span class="qna-lock">🔒</span>
+                        </div>
+                        <div class="qna-col-writer">htok*******</div>
+                        <div class="qna-col-date">2025.11.11.</div>
+                      </div>
+
+                      <div class="qna-row" data-status="done">
+                        <div class="qna-col-status">답변완료</div>
+                        <div class="qna-col-title">절단 주문도 가능한가요?</div>
+                        <div class="qna-col-writer">cut***</div>
+                        <div class="qna-col-date">2024.08.14.</div>
+                      </div>
+
+                      <div class="qna-row" data-status="done">
+                        <div class="qna-col-status">답변완료</div>
+                        <div class="qna-col-title">
+                          하우스 길이가 길 경우 연결해서 사용 가능한지
+                          궁금합니다.
+                        </div>
+                        <div class="qna-col-writer">long****</div>
+                        <div class="qna-col-date">2024.07.31.</div>
+                      </div>
+                    </div>
+
+                    <div class="qna-pagination" id="qnaPagination"></div>
+                  </div>
+                </div>
+              </section>
+
+              <section
+                class="detail-anchor-section"
+                id="detail-related-section"
+              >
+                <div class="detail-tab-section">
+                  <div class="detail-tab-menu">
+                    <a href="#detail-info-section" class="detail-tab-btn"
+                      >상품상세정보</a
+                    >
+                    <a href="#detail-review-section" class="detail-tab-btn"
+                      >상품사용후기</a
+                    >
+                    <a href="#detail-qna-section" class="detail-tab-btn"
+                      >상품Q&amp;A</a
+                    >
+                    <a
+                      href="#detail-related-section"
+                      class="detail-tab-btn active"
+                      >관련상품</a
+                    >
+                    <a href="#detail-delivery-section" class="detail-tab-btn"
+                      >배송정보</a
+                    >
+                    <a href="#detail-return-section" class="detail-tab-btn"
+                      >교환 및 반품정보</a
+                    >
+                  </div>
+                </div>
+                <div class="detail-tab-inner">
+                  <h3>관련상품</h3>
+                  <p>관련상품 영역입니다.</p>
+                </div>
+              </section>
+
+              <section
+                class="detail-anchor-section"
+                id="detail-delivery-section"
+              >
+                <div class="detail-tab-inner detail-policy-box">
+                  <div class="detail-tab-section">
+                    <div class="detail-tab-menu">
+                      <a href="#detail-info-section" class="detail-tab-btn"
+                        >상품상세정보</a
+                      >
+                      <a href="#detail-review-section" class="detail-tab-btn"
+                        >상품사용후기</a
+                      >
+                      <a href="#detail-qna-section" class="detail-tab-btn"
+                        >상품Q&amp;A</a
+                      >
+                      <a href="#detail-related-section" class="detail-tab-btn"
+                        >관련상품</a
+                      >
+                      <a
+                        href="#detail-delivery-section"
+                        class="detail-tab-btn active"
+                        >배송정보</a
+                      >
+                      <a href="#detail-return-section" class="detail-tab-btn"
+                        >교환 및 반품정보</a
+                      >
+                    </div>
+                  </div>
+                  <div class="detail-tab-inner">
+                    <h3>배송정보</h3>
+                    <p>배송 방법 : 택배 / 화물</p>
+                    <p>배송 회사 : 롯데택배 / 대신화물택배</p>
+                    <p>배송 지역 : 전국지역 (해외배송불가)</p>
+                    <p>
+                      배송 비용 : 무료 배송 상품을 제외한 모든 상품의 배송비는
+                      <span class="policy-red">[착불]</span> 입니다.
+                    </p>
+                    <p>배송 기간 : 2일 ~ 3일</p>
+
+                    <div class="policy-subtitle">배송 안내</div>
+
+                    <p class="policy-red">
+                      - 상품의 배송지연 및 오배송으로 인한 피해 배상은 없습니다.
+                    </p>
+                    <p class="policy-red">
+                      - 배송완료 이전에 부른 인부에 대한 시공비, 인건비 등 기타
+                      피해 배상은 불가능합니다.
+                    </p>
+                    <p class="policy-red">
+                      - 기간을 넉넉하게 잡아주시고 꼭 물건을 확인 후 시공 준비를
+                      하시기 바랍니다.
+                    </p>
+                    <p class="policy-red">
+                      - 무료배송 제품을 제외한 모든 제품의 배송비는 착불이며,
+                      무료배송 제품과 묶음배송이 불가능합니다.
+                    </p>
+                    <p class="policy-red">
+                      - 택배 수령 시 택배 기사와 제품 상태를 확인하시고
+                      수령하시기 바랍니다.
+                    </p>
+                    <p class="policy-red">
+                      - 배송 시 파손 및 훼손이 있을 경우 택배사와 조정하셔야
+                      합니다.
+                    </p>
+                    <p>
+                      - 배송비는 구매금액과 상관없이 제품의 부피, 무게, 지역에
+                      따라 책정됩니다.
+                    </p>
+                    <p class="policy-red">
+                      - 제품 특성에 따라 묶음배송이 불가능한 제품은 개별
+                      배송됩니다.
+                    </p>
+                    <p class="policy-red">
+                      - 사다리차나 도서지방은 별도의 추가금액이 발생할 수
+                      있습니다.
+                    </p>
+                    <p class="policy-red">
+                      - 고객님께서 주문하신 상품은 입금 확인 후 배송됩니다.
+                    </p>
+                  </div>
+                </div>
+              </section>
+
+              <section class="detail-anchor-section" id="detail-return-section">
+                <div class="detail-tab-section">
+                  <div class="detail-tab-menu">
+                    <a href="#detail-info-section" class="detail-tab-btn"
+                      >상품상세정보</a
+                    >
+                    <a href="#detail-review-section" class="detail-tab-btn"
+                      >상품사용후기</a
+                    >
+                    <a href="#detail-qna-section" class="detail-tab-btn"
+                      >상품Q&amp;A</a
+                    >
+                    <a href="#detail-related-section" class="detail-tab-btn"
+                      >관련상품</a
+                    >
+                    <a href="#detail-delivery-section" class="detail-tab-btn"
+                      >배송정보</a
+                    >
+                    <a
+                      href="#detail-return-section"
+                      class="detail-tab-btn active"
+                      >교환 및 반품정보</a
+                    >
+                  </div>
+                </div>
+                <div class="detail-tab-inner detail-policy-box">
+                  <h3>교환 및 반품정보</h3>
+
+                  <p>- 구입제품의 이상이 있을 경우</p>
+                  <p>
+                    - 구입 후 7일 이내 동일 제품으로 교환 가능하며 운송비는
+                    판매자 부담입니다.
+                  </p>
+                  <p>
+                    - 단, 제품 특성상 교환 또는 반품이 불가능한 경우가 있으니
+                    상세페이지를 확인해 주세요.
+                  </p>
+                  <p>
+                    - 다른 제품으로 교환하거나 이상이 없는 제품과 함께 교환을
+                    원할 경우 구매자께서 운송비를 부담합니다.
+                  </p>
+                  <p>
+                    - 구입제품의 이상이 없을 경우(단순변심, 색상/사이즈/다른
+                    상품 교환)
+                  </p>
+                  <p>
+                    - 구입 후 7일 이내 교환 가능하며 구매자께서 운송비를
+                    부담합니다.
+                  </p>
+                  <p>- 무료배송 상품의 경우 왕복 운송비를 지불하셔야 합니다.</p>
+
+                  <div class="policy-warning-title">※주의사항※</div>
+
+                  <p class="policy-red">
+                    - 수량 부족 또는 제품 이상에 대한 이의 제기는 제품 수령 후
+                    7일 이내 가능합니다.
+                  </p>
+                  <p class="policy-red">
+                    - 비닐포장 또는 박스포장의 폐기/훼손 등으로 상품 가치가
+                    멸실된 경우 반품 및 교환이 불가능합니다.
+                  </p>
+                  <p class="policy-red">
+                    - 반품 시 해당 사은품이 있을 경우 함께 보내주셔야 합니다.
+                  </p>
+                </div>
+              </section>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-top-wrap">
+        <div class="inner">
+          <div class="footer-top">
+            <div class="footer-top-col customer-center">
+              <h3>고객센터</h3>
+              <p class="footer-phone">044-864-2533</p>
+              <p class="footer-info-line">팩스: 123-456-7894</p>
+              <p class="footer-info-line">이메일: sejongagro@hanmail.net</p>
+              <p class="footer-info-line">월요일~금요일 08:30~18:00</p>
+              <p class="footer-info-line">주말, 공휴일 휴무</p>
+              <div class="footer-account-box">
+                <p class="footer-account">농협 111-2222-3333-44</p>
+                <p class="footer-holder">예금주 : 세종농자재농약마트</p>
+              </div>
+            </div>
+
+            <div class="footer-top-col notice-event">
+              <div class="footer-heading-row">
+                <h3>공지사항</h3>
+                <a href="#">더보기+</a>
+              </div>
+              <ul class="footer-bullet-list">
+                <li><a href="#">몰 오픈을 축하합니다.</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-top-col footer-location">
+              <h3>오시는길</h3>
+              <p class="footer-address-text">
+                세종특별자치시 연동면 청연로 380, 세종농자재농약마트
+              </p>
+
+              <div class="footer-map-link">
+                <a
+                  href="https://naver.me/59URM72D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="네이버 지도에서 오시는길 보기"
+                  class="naver-map-link"
+                >
+                  <span class="naver-map-icon-wrap">
+                    <img
+                      src="naver_map_icon.jpg"
+                      alt="네이버맵 아이콘"
+                      class="naver-map-icon-img"
+                    />
+                  </span>
+                  <span class="naver-map-text single-line"
+                    >네이버맵 바로가기</span
+                  >
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-wrap">
+        <div class="inner footer-bottom-inner">
+          <div class="footer-brand-row">
+            <div class="footer-brand-logo-text">세종농자재농약마트</div>
+
+            <div class="footer-company-info">
+              <div class="footer-links">
+                <a href="#">회사소개</a>
+                <a href="#">이용약관</a>
+                <a href="#" class="strong">개인정보처리방침</a>
+                <a href="#">이용안내</a>
+                <a href="#">제휴문의</a>
+              </div>
+              <p>
+                법인명(상호) : 세종농자재농약마트
+                <span>|</span> 대표자(성명) : 김대표 <span>|</span>
+                사업자 등록번호 : 111-22-33333
+              </p>
+              <p>
+                통신판매업 신고 : 제1111-세종연동-00015호
+                <a href="#">[사업자정보확인]</a>
+              </p>
+              <p>
+                전화 : 044-864-2533 <span>|</span> 팩스 : 123-456-7894
+                <span>|</span> 이메일 : sejongagro@hanmail.net
+              </p>
+              <p>
+                주소 : 30067 세종특별자치시 연동면 청연로 380 세종농자재농약마트
+              </p>
+              <p>개인정보관리책임자 : 김책임(sejongagro@hanmail.net)</p>
+              <p class="footer-copy">
+                Copyright © 세종농자재농약마트. All rights reserved.
+              </p>
+
+              <div class="footer-ksnet-box">
+                <div class="footer-ksnet-badge">KSNET</div>
+                <div class="footer-ksnet-text">
+                  <p class="ksnet-title">구매안전 서비스</p>
+                  <p>고객님은 안전거래를 위해 현금등으로 결제시</p>
+                  <p>
+                    저희 쇼핑몰이 가입한 PG에스크로 구매안전서비스를 이용하실 수
+                    있습니다.
+                  </p>
+                  <p class="ksnet-id">결제대행계약증서 등록번호 00-002-00003</p>
+                </div>
+                <a href="#" class="footer-ksnet-btn"
+                  >서비스 가입사실 확인 &gt;</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
