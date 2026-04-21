@@ -4,374 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>세종농자재농약마트</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/layout.css" />
+    <link rel="stylesheet" href="styles/index.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="top-util-wrap">
-        <div class="inner">
-          <div class="top-util">
-            <a href="login.html">로그인</a>
-            <a href="signup.html">회원가입</a>
-            <a href="mypage.html">마이페이지</a>
-            <a href="cart.html">장바구니</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="main-header">
-        <div class="inner">
-          <div class="header-content">
-            <h1 class="logo">
-              <a href="index.html">
-                <img src="logo.png" alt="세종농자재농약마트 로고" />
-              </a>
-            </h1>
-
-            <div class="search-area">
-              <form class="search-box" id="searchForm">
-                <input
-                  type="text"
-                  id="searchInput"
-                  placeholder="검색어를 입력하세요"
-                />
-                <button type="submit" aria-label="검색">
-                  <img src="search.png" alt="검색" />
-                </button>
-              </form>
-            </div>
-
-            <div class="bank-area">
-              <div class="bank-icon">
-                <img src="bank_logo.png" alt="은행 로고" />
-              </div>
-              <div class="bank-text">
-                <p>세종농약농자재마트</p>
-                <p>농협: 111-2222-3333-44</p>
-              </div>
-            </div>
-
-            <div class="phone-area">
-              <span class="phone-icon">📞</span>
-              <span>044-864-2533</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
+    <div id="site-header"></div>
 
     <main class="main-content">
       <div class="inner">
         <div class="content-layout">
-          <aside class="side-category">
-            <ul class="category-menu">
-              <li class="category-item">
-                <a href="products.html?category=house">하우스 시설자재</a>
-                <ul class="subcategory-menu">
-                  <li>
-                    <a
-                      href="products.html?category=house&subcategory=pipe"
-                      data-category-link="house"
-                      data-subcategory-link="pipe"
-                      >파이프 / 연결자재</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="products.html?category=house&subcategory=clip"
-                      data-category-link="house"
-                      data-subcategory-link="clip"
-                      >고정클립 / 부속</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="products.html?category=house&subcategory=film"
-                      data-category-link="house"
-                      data-subcategory-link="film"
-                      >하우스 필름자재</a
-                    >
-                  </li>
-                </ul>
-              </li>
-
-              <li class="category-item">
-                <a href="products.html?category=water">관수 / 배관 자재</a>
-                <ul class="subcategory-menu">
-                  <li>
-                    <a
-                      href="products.html?category=water&subcategory=valve"
-                      data-category-link="water"
-                      data-subcategory-link="valve"
-                      >밸브 / 코크</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="products.html?category=water&subcategory=fitting"
-                      data-category-link="water"
-                      data-subcategory-link="fitting"
-                      >엘보 / 티 / 연결구</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="products.html?category=water&subcategory=hose"
-                      data-category-link="water"
-                      data-subcategory-link="hose"
-                      >호스 / 튜브</a
-                    >
-                  </li>
-                </ul>
-              </li>
-
-              <li class="category-item">
-                <a href="products.html?category=tank">물탱크 / 고레통</a>
-                <ul class="subcategory-menu">
-                  <li>
-                    <a
-                      href="products.html?category=tank&subcategory=smalltank"
-                      data-category-link="tank"
-                      data-subcategory-link="smalltank"
-                      >소형 물탱크</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="products.html?category=tank&subcategory=bigtank"
-                      data-category-link="tank"
-                      data-subcategory-link="bigtank"
-                      >대형 물탱크</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="products.html?category=tank&subcategory=container"
-                      data-category-link="tank"
-                      data-subcategory-link="container"
-                      >고레통 / 저장용기</a
-                    >
-                  </li>
-                </ul>
-              </li>
-
-              <li class="category-item">
-                <a href="products.html?category=vinyl">하우스 / 멀칭비닐</a>
-                <ul class="subcategory-menu">
-                  <li>
-                    <a
-                      href="products.html?category=vinyl&subcategory=housevinyl"
-                      data-category-link="vinyl"
-                      data-subcategory-link="housevinyl"
-                      >하우스 비닐</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="products.html?category=vinyl&subcategory=mulching"
-                      data-category-link="vinyl"
-                      data-subcategory-link="mulching"
-                      >멀칭 비닐</a
-                    >
-                  </li>
-                </ul>
-              </li>
-
-              <li class="category-item">
-                <a href="products.html?category=weed">전초방지</a>
-                <ul class="subcategory-menu">
-                  <li>
-                    <a
-                      href="products.html?category=weed&subcategory=sheet"
-                      data-category-link="weed"
-                      data-subcategory-link="sheet"
-                      >잡초방지 시트</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="products.html?category=weed&subcategory=mat"
-                      data-category-link="weed"
-                      data-subcategory-link="mat"
-                      >잡초방지 매트</a
-                    >
-                  </li>
-                </ul>
-              </li>
-
-              <li class="category-item">
-                <a href="products.html?category=garden">원예자재</a>
-                <ul class="subcategory-menu">
-                  <li>
-                    <a
-                      href="products.html?category=garden&subcategory=support"
-                      data-category-link="garden"
-                      data-subcategory-link="support"
-                      >지지대 / 유인끈</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="products.html?category=garden&subcategory=pot"
-                      data-category-link="garden"
-                      data-subcategory-link="pot"
-                      >화분 / 모종자재</a
-                    >
-                  </li>
-                </ul>
-              </li>
-
-              <li class="category-item">
-                <a href="products.html?category=shade"
-                  >차광망 / 기타망 / 보온덮개</a
-                >
-                <ul class="subcategory-menu">
-                  <li>
-                    <a
-                      href="products.html?category=shade&subcategory=shadecloth"
-                      data-category-link="shade"
-                      data-subcategory-link="shadecloth"
-                      >차광망</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="products.html?category=shade&subcategory=cover"
-                      data-category-link="shade"
-                      data-subcategory-link="cover"
-                      >보온덮개</a
-                    >
-                  </li>
-                </ul>
-              </li>
-
-              <li class="category-item">
-                <a href="products.html?category=tools"
-                  >철물 / 공구 / 기타자재</a
-                >
-                <ul class="subcategory-menu">
-                  <li>
-                    <a
-                      href="products.html?category=tools&subcategory=hardware"
-                      data-category-link="tools"
-                      data-subcategory-link="hardware"
-                      >철물 자재</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="products.html?category=tools&subcategory=tool"
-                      data-category-link="tools"
-                      data-subcategory-link="tool"
-                      >작업 공구</a
-                    >
-                  </li>
-                </ul>
-              </li>
-
-              <li class="category-item">
-                <a href="products.html?category=ladder">사다리</a>
-                <ul class="subcategory-menu">
-                  <li>
-                    <a
-                      href="products.html?category=ladder&subcategory=folding"
-                      data-category-link="ladder"
-                      data-subcategory-link="folding"
-                      >접이식 사다리</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="products.html?category=ladder&subcategory=work"
-                      data-category-link="ladder"
-                      data-subcategory-link="work"
-                      >작업용 사다리</a
-                    >
-                  </li>
-                </ul>
-              </li>
-
-              <li class="category-item">
-                <a href="products.html?category=pest">해충 / 유해조수퇴치기</a>
-                <ul class="subcategory-menu">
-                  <li>
-                    <a
-                      href="products.html?category=pest&subcategory=insect"
-                      data-category-link="pest"
-                      data-subcategory-link="insect"
-                      >해충 퇴치기</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="products.html?category=pest&subcategory=animal"
-                      data-category-link="pest"
-                      data-subcategory-link="animal"
-                      >유해조수 퇴치기</a
-                    >
-                  </li>
-                </ul>
-              </li>
-
-              <li class="category-item">
-                <a href="inquiry.html">1:1문의</a>
-              </li>
-            </ul>
-          </aside>
+          <aside class="side-category" id="site-sidebar"></aside>
 
           <section class="main-banner">
             <div class="banner-slider" id="bannerSlider">
               <div class="banner-track" id="bannerTrack">
-                <div class="banner-slide active">
-                  <img src="banner1.jpg" alt="배너 1" />
-                </div>
-                <div class="banner-slide">
-                  <img src="banner2.jpg" alt="배너 2" />
-                </div>
-                <div class="banner-slide">
-                  <img src="banner3.jpg" alt="배너 3" />
-                </div>
-                <div class="banner-slide">
-                  <img src="banner4.jpg" alt="배너 4" />
-                </div>
+                <div class="banner-slide active"><img src="banner1.jpg" alt="배너 1" /></div>
+                <div class="banner-slide"><img src="banner2.jpg" alt="배너 2" /></div>
+                <div class="banner-slide"><img src="banner3.jpg" alt="배너 3" /></div>
+                <div class="banner-slide"><img src="banner4.jpg" alt="배너 4" /></div>
               </div>
-
-              <button
-                class="banner-btn banner-btn-prev"
-                id="prevBanner"
-                aria-label="이전 배너"
-              >
-                &#10094;
-              </button>
-              <button
-                class="banner-btn banner-btn-next"
-                id="nextBanner"
-                aria-label="다음 배너"
-              >
-                &#10095;
-              </button>
-
+              <button class="banner-btn banner-btn-prev" id="prevBanner" aria-label="이전 배너">&#10094;</button>
+              <button class="banner-btn banner-btn-next" id="nextBanner" aria-label="다음 배너">&#10095;</button>
               <div class="banner-dots" id="bannerDots">
-                <button
-                  class="banner-dot active"
-                  data-index="0"
-                  aria-label="1번 배너"
-                ></button>
-                <button
-                  class="banner-dot"
-                  data-index="1"
-                  aria-label="2번 배너"
-                ></button>
-                <button
-                  class="banner-dot"
-                  data-index="2"
-                  aria-label="3번 배너"
-                ></button>
-                <button
-                  class="banner-dot"
-                  data-index="3"
-                  aria-label="4번 배너"
-                ></button>
+                <button class="banner-dot active" data-index="0" aria-label="1번 배너"></button>
+                <button class="banner-dot" data-index="1" aria-label="2번 배너"></button>
+                <button class="banner-dot" data-index="2" aria-label="3번 배너"></button>
+                <button class="banner-dot" data-index="3" aria-label="4번 배너"></button>
               </div>
             </div>
           </section>
@@ -381,10 +40,7 @@
 
     <section class="best-category-section">
       <div class="inner">
-        <div class="best-category-header">
-          <h2>카테고리 베스트</h2>
-        </div>
-
+        <div class="best-category-header"><h2>카테고리 베스트</h2></div>
         <div class="best-category-tabs">
           <button class="best-tab active" type="button">하우스시설자재</button>
           <button class="best-tab" type="button">관수/배관자재</button>
@@ -397,273 +53,39 @@
           <button class="best-tab" type="button">수레/사다리</button>
           <button class="best-tab" type="button">해충/유해조수퇴치기</button>
         </div>
-
         <div class="best-category-products">
-          <article class="product-card">
-            <div class="product-img">
-              <img src="best1.jpg" alt="베스트 상품 1" />
-            </div>
-            <p class="product-name">뾰족이 파이프(인발)</p>
-            <p class="product-desc">농업용 길이 연장용 비닐하우스자재</p>
-            <p class="product-price">1,290원</p>
-          </article>
-
-          <article class="product-card">
-            <div class="product-img">
-              <img src="best2.jpg" alt="베스트 상품 2" />
-            </div>
-            <p class="product-name">물호스 밸브</p>
-            <p class="product-desc">16mm 수도호스 연결부속</p>
-            <p class="product-price">650원</p>
-          </article>
-
-          <article class="product-card">
-            <div class="product-img">
-              <img src="best3.jpg" alt="베스트 상품 3" />
-            </div>
-            <p class="product-name">물호스 엘보</p>
-            <p class="product-desc">16mm 수도호스 연결부속</p>
-            <p class="product-price">680원</p>
-          </article>
-
-          <article class="product-card">
-            <div class="product-img">
-              <img src="best4.jpg" alt="베스트 상품 4" />
-            </div>
-            <p class="product-name">물호스 정티</p>
-            <p class="product-desc">16mm 수도호스 연결부속</p>
-            <p class="product-price">950원</p>
-          </article>
-
-          <article class="product-card">
-            <div class="product-img">
-              <img src="best5.jpg" alt="베스트 상품 5" />
-            </div>
-            <p class="product-name">물호스 암나사티</p>
-            <p class="product-desc">16mm 수도호스 연결부속</p>
-            <p class="product-price">900원</p>
-          </article>
+          <article class="product-card"><div class="product-img"><img src="best1.jpg" alt="베스트 상품 1" /></div><p class="product-name">뾰족이 파이프(인발)</p><p class="product-desc">농업용 길이 연장용 비닐하우스자재</p><p class="product-price">1,290원</p></article>
+          <article class="product-card"><div class="product-img"><img src="best2.jpg" alt="베스트 상품 2" /></div><p class="product-name">물호스 밸브</p><p class="product-desc">16mm 수도호스 연결부속</p><p class="product-price">650원</p></article>
+          <article class="product-card"><div class="product-img"><img src="best3.jpg" alt="베스트 상품 3" /></div><p class="product-name">물호스 엘보</p><p class="product-desc">16mm 수도호스 연결부속</p><p class="product-price">680원</p></article>
+          <article class="product-card"><div class="product-img"><img src="best4.jpg" alt="베스트 상품 4" /></div><p class="product-name">물호스 정티</p><p class="product-desc">16mm 수도호스 연결부속</p><p class="product-price">950원</p></article>
+          <article class="product-card"><div class="product-img"><img src="best5.jpg" alt="베스트 상품 5" /></div><p class="product-name">물호스 암나사티</p><p class="product-desc">16mm 수도호스 연결부속</p><p class="product-price">900원</p></article>
         </div>
       </div>
     </section>
 
     <section class="all-products-section">
       <div class="inner">
-        <div class="all-products-header">
-          <h2>전체상품보기</h2>
-          <a href="#" class="more-link">더보기</a>
-        </div>
-
+        <div class="all-products-header"><h2>전체상품보기</h2><a href="#" class="more-link">더보기</a></div>
         <div class="product-grid">
-          <!-- 상품 카드 -->
-          <article class="product-card">
-            <div class="product-img">
-              <img src="p1.jpg" alt="상품1" />
-            </div>
-            <p class="product-name">뾰족이 파이프(인발)</p>
-            <p class="product-desc">농업용 길이 연장용 비닐하우스자재</p>
-            <p class="product-price">1,290원</p>
-          </article>
-
-          <article class="product-card">
-            <div class="product-img">
-              <img src="p2.jpg" alt="상품2" />
-            </div>
-            <p class="product-name">물호스 밸브</p>
-            <p class="product-desc">16mm 수도호스 연결부속</p>
-            <p class="product-price">650원</p>
-          </article>
-
-          <article class="product-card">
-            <div class="product-img">
-              <img src="p3.jpg" alt="상품3" />
-            </div>
-            <p class="product-name">물호스 엘보</p>
-            <p class="product-desc">16mm 수도호스 연결부속</p>
-            <p class="product-price">680원</p>
-          </article>
-
-          <article class="product-card">
-            <div class="product-img">
-              <img src="p4.jpg" alt="상품4" />
-            </div>
-            <p class="product-name">물호스 정티</p>
-            <p class="product-desc">16mm 수도호스 연결부속</p>
-            <p class="product-price">950원</p>
-          </article>
-
-          <article class="product-card">
-            <div class="product-img">
-              <img src="p5.jpg" alt="상품5" />
-            </div>
-            <p class="product-name">물호스 암나사티</p>
-            <p class="product-desc">16mm 수도호스 연결부속</p>
-            <p class="product-price">900원</p>
-          </article>
-
-          <!-- 2줄 -->
-          <article class="product-card">
-            <div class="product-img">
-              <img src="p6.jpg" alt="상품6" />
-            </div>
-            <p class="product-name">물호스 엘보</p>
-            <p class="product-desc">연결부속</p>
-            <p class="product-price">680원</p>
-          </article>
-
-          <article class="product-card">
-            <div class="product-img">
-              <img src="p7.jpg" alt="상품7" />
-            </div>
-            <p class="product-name">여과기 소모품</p>
-            <p class="product-desc">농업용 필터</p>
-            <p class="product-price">7,000원</p>
-          </article>
-
-          <article class="product-card">
-            <div class="product-img">
-              <img src="p8.jpg" alt="상품8" />
-            </div>
-            <p class="product-name">점적호스</p>
-            <p class="product-desc">네타핌 관수자재</p>
-            <p class="product-price">365,000원</p>
-          </article>
-
-          <article class="product-card">
-            <div class="product-img">
-              <img src="p9.jpg" alt="상품9" />
-            </div>
-            <p class="product-name">점적호스</p>
-            <p class="product-desc">네타핌 관수자재</p>
-            <p class="product-price">274,500원</p>
-          </article>
-
-          <article class="product-card">
-            <div class="product-img">
-              <img src="p10.jpg" alt="상품10" />
-            </div>
-            <p class="product-name">튜브 호스 걸이</p>
-            <p class="product-desc">관수자재</p>
-            <p class="product-price">110원</p>
-          </article>
+          <article class="product-card"><div class="product-img"><img src="p1.jpg" alt="상품1" /></div><p class="product-name">뾰족이 파이프(인발)</p><p class="product-desc">농업용 길이 연장용 비닐하우스자재</p><p class="product-price">1,290원</p></article>
+          <article class="product-card"><div class="product-img"><img src="p2.jpg" alt="상품2" /></div><p class="product-name">물호스 밸브</p><p class="product-desc">16mm 수도호스 연결부속</p><p class="product-price">650원</p></article>
+          <article class="product-card"><div class="product-img"><img src="p3.jpg" alt="상품3" /></div><p class="product-name">물호스 엘보</p><p class="product-desc">16mm 수도호스 연결부속</p><p class="product-price">680원</p></article>
+          <article class="product-card"><div class="product-img"><img src="p4.jpg" alt="상품4" /></div><p class="product-name">물호스 정티</p><p class="product-desc">16mm 수도호스 연결부속</p><p class="product-price">950원</p></article>
+          <article class="product-card"><div class="product-img"><img src="p5.jpg" alt="상품5" /></div><p class="product-name">물호스 암나사티</p><p class="product-desc">16mm 수도호스 연결부속</p><p class="product-price">900원</p></article>
+          <article class="product-card"><div class="product-img"><img src="p6.jpg" alt="상품6" /></div><p class="product-name">물호스 엘보</p><p class="product-desc">연결부속</p><p class="product-price">680원</p></article>
+          <article class="product-card"><div class="product-img"><img src="p7.jpg" alt="상품7" /></div><p class="product-name">여과기 소모품</p><p class="product-desc">농업용 필터</p><p class="product-price">7,000원</p></article>
+          <article class="product-card"><div class="product-img"><img src="p8.jpg" alt="상품8" /></div><p class="product-name">점적호스</p><p class="product-desc">네타핌 관수자재</p><p class="product-price">365,000원</p></article>
+          <article class="product-card"><div class="product-img"><img src="p9.jpg" alt="상품9" /></div><p class="product-name">점적호스</p><p class="product-desc">네타핌 관수자재</p><p class="product-price">274,500원</p></article>
+          <article class="product-card"><div class="product-img"><img src="p10.jpg" alt="상품10" /></div><p class="product-name">튜브 호스 걸이</p><p class="product-desc">관수자재</p><p class="product-price">110원</p></article>
         </div>
       </div>
     </section>
 
-    <footer class="site-footer">
-      <div class="footer-top-wrap">
-        <div class="inner">
-          <div class="footer-top">
-            <div class="footer-top-col customer-center">
-              <h3>고객센터</h3>
-              <p class="footer-phone">044-864-2533</p>
-              <p class="footer-info-line">팩스: 123-456-7894</p>
-              <p class="footer-info-line">이메일: sejongagro@hanmail.net</p>
-              <p class="footer-info-line">월요일~금요일 08:30~18:00</p>
-              <p class="footer-info-line">주말, 공휴일 휴무</p>
-              <div class="footer-account-box">
-                <p class="footer-account">농협 111-2222-3333-44</p>
-                <p class="footer-holder">예금주 : 세종농자재농약마트</p>
-              </div>
-            </div>
+    <div id="site-footer"></div>
 
-            <div class="footer-top-col notice-event">
-              <div class="footer-heading-row">
-                <h3>공지사항</h3>
-                <a href="#">더보기+</a>
-              </div>
-              <ul class="footer-bullet-list">
-                <li><a href="#">몰 오픈을 축하합니다.</a></li>
-              </ul>
-            </div>
-
-            <div class="footer-top-col footer-location">
-              <h3>오시는길</h3>
-              <p class="footer-address-text">
-                세종특별자치시 연동면 청연로 380, 세종농자재농약마트
-              </p>
-
-              <div class="footer-map-link">
-                <a
-                  href="https://naver.me/59URM72D"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="네이버 지도에서 오시는길 보기"
-                  class="naver-map-link"
-                >
-                  <span class="naver-map-icon-wrap">
-                    <img
-                      src="naver_map_icon.jpg"
-                      alt="네이버맵 아이콘"
-                      class="naver-map-icon-img"
-                    />
-                  </span>
-
-                  <span class="naver-map-text single-line"
-                    >네이버맵 바로가기</span
-                  >
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-bottom-wrap">
-        <div class="inner footer-bottom-inner">
-          <div class="footer-brand-row">
-            <div class="footer-brand-logo-text">세종농자재농약마트</div>
-
-            <div class="footer-company-info">
-              <div class="footer-links">
-                <a href="#">회사소개</a>
-                <a href="#">이용약관</a>
-                <a href="#" class="strong">개인정보처리방침</a>
-                <a href="#">이용안내</a>
-                <a href="#">제휴문의</a>
-              </div>
-              <p>
-                법인명(상호) : 세종농자재농약마트
-                <span>|</span> 대표자(성명) : 김대표 <span>|</span>
-                사업자 등록번호 : 111-22-33333
-              </p>
-              <p>
-                통신판매업 신고 : 제1111-세종연동-00015호
-                <a href="#">[사업자정보확인]</a>
-              </p>
-              <p>
-                전화 : 044-864-2533 <span>|</span> 팩스 : 123-456-7894
-                <span>|</span> 이메일 : sejongagro@hanmail.net
-              </p>
-              <p>
-                주소 : 30067 세종특별자치시 연동면 청연로 380 세종농자재농약마트
-              </p>
-              <p>개인정보관리책임자 : 김책임(sejongagro@hanmail.net)</p>
-              <p class="footer-copy">
-                Copyright © 세종농자재농약마트. All rights reserved.
-              </p>
-
-              <div class="footer-ksnet-box">
-                <div class="footer-ksnet-badge">KSNET</div>
-                <div class="footer-ksnet-text">
-                  <p class="ksnet-title">구매안전 서비스</p>
-                  <p>고객님은 안전거래를 위해 현금등으로 결제시</p>
-                  <p>
-                    저희 쇼핑몰이 가입한 PG에스크로 구매안전서비스를 이용하실 수
-                    있습니다.
-                  </p>
-                  <p class="ksnet-id">결제대행계약증서 등록번호 00-002-00003</p>
-                </div>
-                <a href="#" class="footer-ksnet-btn"
-                  >서비스 가입사실 확인 &gt;</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <script src="script.js"></script>
+    <script src="js/site-config.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>

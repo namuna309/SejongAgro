@@ -1,0 +1,6 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { color: #222; background: #fff; }
+a { color: inherit; }
+img { display: block; max-width: 100%; }
+button, input, select { font: inherit; }
+.inner { width: 100%; max-width: 1200px; margin: 0 auto; }
