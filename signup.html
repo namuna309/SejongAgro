@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>회원가입 | 세종농자재농약마트</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="top-util-wrap">
+        <div class="inner">
+          <div class="top-util">
+            <a href="login.html">로그인</a>
+            <a href="signup.html">회원가입</a>
+            <a href="#">마이페이지</a>
+            <a href="#">장바구니</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-header">
+        <div class="inner">
+          <div class="header-content">
+            <h1 class="logo">
+              <a href="index.html">
+                <img src="logo.png" alt="세종농자재농약마트 로고" />
+              </a>
+            </h1>
+
+            <div class="search-area">
+              <form class="search-box" id="searchForm">
+                <input
+                  type="text"
+                  id="searchInput"
+                  placeholder="검색어를 입력하세요"
+                />
+                <button type="submit" aria-label="검색">
+                  <img src="search.png" alt="검색" />
+                </button>
+              </form>
+            </div>
+
+            <div class="bank-area">
+              <div class="bank-icon">
+                <img src="bank_logo.png" alt="은행 로고" />
+              </div>
+              <div class="bank-text">
+                <p>세종농약농자재마트</p>
+                <p>농협: 111-2222-3333-44</p>
+              </div>
+            </div>
+
+            <div class="phone-area">
+              <span class="phone-icon">📞</span>
+              <span>044-864-2533</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="signup-page">
+      <div class="inner">
+        <section class="signup-section">
+          <div class="signup-section-title">
+            <h2>회원가입</h2>
+            <p>회원가입을 위한 필수입력 항목을 입력해 주십시오.</p>
+          </div>
+
+          <form class="signup-form">
+            <div class="signup-block">
+              <div class="signup-block-title">
+                <h3>기본정보</h3>
+              </div>
+
+              <table class="signup-table">
+                <tbody>
+                  <tr>
+                    <th>아이디</th>
+                    <td>
+                      <div class="signup-inline-row">
+                        <input
+                          type="text"
+                          class="signup-input signup-input-id"
+                          placeholder="아이디"
+                        />
+                        <button type="button" class="signup-check-btn">
+                          아이디 중복확인
+                        </button>
+                        <span class="signup-guide-text"
+                          >(영문소문자/숫자, 4~16자)</span
+                        >
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th>비밀번호</th>
+                    <td>
+                      <div class="signup-inline-row">
+                        <input
+                          type="password"
+                          class="signup-input signup-input-short"
+                          placeholder="비밀번호"
+                        />
+                        <span class="signup-guide-text"
+                          >(영문 대소문자/숫자/특수문자 중 2가지 이상 조합,
+                          10자~16자)</span
+                        >
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th>비밀번호 확인</th>
+                    <td>
+                      <input
+                        type="password"
+                        class="signup-input signup-input-short"
+                        placeholder="비밀번호 확인"
+                      />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th>비밀번호 확인 질문</th>
+                    <td>
+                      <select
+                        class="signup-select signup-question-select"
+                        title="질문을 선택하세요"
+                      >
+                        <option>기억에 남는 추억의 장소는?</option>
+                        <option>가장 좋아하는 음식은?</option>
+                        <option>나의 보물 1호는?</option>
+                        <option>어머니 성함은?</option>
+                      </select>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th>비밀번호 확인 답변</th>
+                    <td>
+                      <input
+                        type="text"
+                        class="signup-input signup-input-wide"
+                        placeholder="답변을 입력하세요"
+                      />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th>이름</th>
+                    <td>
+                      <input
+                        type="text"
+                        class="signup-input signup-input-short"
+                        placeholder="이름"
+                      />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th>성별</th>
+                    <td>
+                      <div class="signup-radio-row">
+                        <label><input type="radio" name="gender" /> 남자</label>
+                        <label><input type="radio" name="gender" /> 여자</label>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th>주소</th>
+                    <td>
+                      <div class="signup-address-wrap">
+                        <div class="signup-inline-row signup-address-top">
+                          <input
+                            type="text"
+                            class="signup-input signup-zipcode"
+                            placeholder="우편번호"
+                          />
+                          <button type="button" class="signup-post-btn">
+                            우편번호
+                          </button>
+                        </div>
+                        <input
+                          type="text"
+                          class="signup-input signup-input-wide"
+                          placeholder="주소"
+                        />
+                        <input
+                          type="text"
+                          class="signup-input signup-input-wide"
+                          placeholder="상세주소"
+                        />
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th>유선전화</th>
+                    <td>
+                      <div class="signup-phone-row">
+                        <select
+                          class="signup-select signup-phone-select"
+                          title="전화번호 앞자리 선택"
+                        >
+                          <option>02</option>
+                          <option>031</option>
+                          <option>032</option>
+                          <option>041</option>
+                          <option>042</option>
+                          <option>044</option>
+                        </select>
+                        <span>-</span>
+                        <input
+                          type="text"
+                          class="signup-input signup-phone-input"
+                          placeholder="전화번호"
+                        />
+                        <span>-</span>
+                        <input
+                          type="text"
+                          class="signup-input signup-phone-input"
+                          placeholder="전화번호"
+                        />
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th>휴대전화</th>
+                    <td>
+                      <div class="signup-phone-row">
+                        <select
+                          class="signup-select signup-phone-select"
+                          title="휴대전화번호 앞자리 선택"
+                        >
+                          <option>010</option>
+                          <option>011</option>
+                          <option>016</option>
+                          <option>017</option>
+                          <option>018</option>
+                          <option>019</option>
+                        </select>
+                        <span>-</span>
+                        <input
+                          type="text"
+                          class="signup-input signup-phone-input"
+                          placeholder="휴대전화번호"
+                        />
+                        <span>-</span>
+                        <input
+                          type="text"
+                          class="signup-input signup-phone-input"
+                          placeholder="휴대전화번호"
+                        />
+                        <label class="signup-inline-check">
+                          <input type="checkbox" />
+                          <span>동의함</span>
+                        </label>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th>이메일</th>
+                    <td>
+                      <input
+                        type="email"
+                        class="signup-input signup-input-email"
+                        placeholder="이메일"
+                      />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th>뉴스메일</th>
+                    <td>
+                      <label class="signup-inline-check">
+                        <span>뉴스 메일을 받으시겠습니까?</span>
+                        <input type="checkbox" />
+                        <span>동의함</span>
+                      </label>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="signup-block">
+              <div class="signup-block-title">
+                <h3>추가정보</h3>
+              </div>
+
+              <table class="signup-table">
+                <tbody>
+                  <tr>
+                    <th>생년월일</th>
+                    <td>
+                      <div class="signup-birth-row">
+                        <input
+                          type="text"
+                          class="signup-input signup-birth-year"
+                          placeholder="년"
+                        />
+                        <span>년</span>
+                        <input
+                          type="text"
+                          class="signup-input signup-birth-month"
+                          placeholder="월"
+                        />
+                        <span>월</span>
+                        <input
+                          type="text"
+                          class="signup-input signup-birth-day"
+                          placeholder="일"
+                        />
+                        <span>일</span>
+
+                        <label
+                          ><input type="radio" name="calendar" checked />
+                          양력</label
+                        >
+                        <label
+                          ><input type="radio" name="calendar" /> 음력</label
+                        >
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th>지역</th>
+                    <td>
+                      <select
+                        class="signup-select signup-region-select"
+                        title="지역 선택"
+                      >
+                        <option>선택</option>
+                        <option>서울</option>
+                        <option>경기</option>
+                        <option>인천</option>
+                        <option>세종</option>
+                        <option>충남</option>
+                        <option>충북</option>
+                        <option>대전</option>
+                        <option>전북</option>
+                        <option>전남</option>
+                        <option>경북</option>
+                        <option>경남</option>
+                        <option>강원</option>
+                        <option>제주</option>
+                      </select>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="signup-agree-section">
+              <div class="signup-agree-title">이용약관 동의</div>
+              <div class="signup-agree-box">
+                제1조(목적)<br />
+                이 약관은 세종농자재농약마트가 운영하는 쇼핑몰에서 제공하는
+                인터넷 관련 서비스의 이용조건 및 절차, 회원과 몰의 권리·의무 및
+                책임사항을 규정함을 목적으로 합니다.<br /><br />
+                제2조(정의)<br />
+                “몰”이란 세종농자재농약마트가 재화 또는 용역을 이용자에게
+                제공하기 위하여 컴퓨터 등 정보통신설비를 이용하여 재화 등을
+                거래할 수 있도록 설정한 가상의 영업장을 말합니다.<br /><br />
+                본 약관은 전자상거래 관련 법령을 준수하며, 회원에게 보다 나은
+                서비스를 제공하기 위하여 운영됩니다.
+              </div>
+              <label class="signup-agree-check">
+                <span>이용약관에 동의하십니까?</span>
+                <input type="checkbox" />
+                <span>동의함</span>
+              </label>
+            </div>
+
+            <div class="signup-agree-section">
+              <div class="signup-agree-title">개인정보 수집 및 이용 동의</div>
+              <div class="signup-agree-box">
+                회사는 수집한 개인정보를 다음의 목적을 위해 활용합니다.<br />
+                · 서비스 제공에 관한 계약 이행 및 서비스 제공에 따른 요금정산<br />
+                · 회원 관리, 본인확인, 개인 식별, 불량회원의 부정 이용 방지와
+                비인가 사용 방지<br />
+                · 신규 서비스 개발 및 마케팅, 이벤트 등 광고성 정보 전달<br /><br />
+                개인정보의 보유 및 이용기간은 회원 탈퇴 시까지로 하며, 관계
+                법령에 따라 보존이 필요한 경우에는 해당 기간 동안 보관합니다.
+              </div>
+              <label class="signup-agree-check">
+                <span>개인정보 수집 및 이용에 동의하십니까?</span>
+                <input type="checkbox" />
+                <span>동의함</span>
+              </label>
+            </div>
+
+            <div class="signup-action-row">
+              <button type="submit" class="signup-submit-btn">회원가입</button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-top-wrap">
+        <div class="inner">
+          <div class="footer-top">
+            <div class="footer-top-col customer-center">
+              <h3>고객센터</h3>
+              <p class="footer-phone">044-864-2533</p>
+              <p class="footer-info-line">팩스: 123-456-7894</p>
+              <p class="footer-info-line">이메일: sejongagro@hanmail.net</p>
+              <p class="footer-info-line">월요일~금요일 08:30~18:00</p>
+              <p class="footer-info-line">주말, 공휴일 휴무</p>
+              <div class="footer-account-box">
+                <p class="footer-account">농협 111-2222-3333-44</p>
+                <p class="footer-holder">예금주 : 세종농자재농약마트</p>
+              </div>
+            </div>
+
+            <div class="footer-top-col notice-event">
+              <div class="footer-heading-row">
+                <h3>공지사항</h3>
+                <a href="#">더보기+</a>
+              </div>
+              <ul class="footer-bullet-list">
+                <li><a href="#">몰 오픈을 축하합니다.</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-top-col footer-location">
+              <h3>오시는길</h3>
+              <p class="footer-address-text">
+                세종특별자치시 연동면 청연로 380, 세종농자재농약마트
+              </p>
+
+              <div class="footer-map-link">
+                <a
+                  href="https://naver.me/59URM72D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="네이버 지도에서 오시는길 보기"
+                  class="naver-map-link"
+                >
+                  <span class="naver-map-icon-wrap">
+                    <img
+                      src="naver_map_icon.jpg"
+                      alt="네이버맵 아이콘"
+                      class="naver-map-icon-img"
+                    />
+                  </span>
+                  <span class="naver-map-text single-line"
+                    >네이버맵 바로가기</span
+                  >
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-wrap">
+        <div class="inner footer-bottom-inner">
+          <div class="footer-brand-row">
+            <div class="footer-brand-logo-text">세종농자재농약마트</div>
+
+            <div class="footer-company-info">
+              <div class="footer-links">
+                <a href="#">회사소개</a>
+                <a href="#">이용약관</a>
+                <a href="#" class="strong">개인정보처리방침</a>
+                <a href="#">이용안내</a>
+                <a href="#">제휴문의</a>
+              </div>
+              <p>
+                법인명(상호) : 세종농자재농약마트
+                <span>|</span> 대표자(성명) : 김대표 <span>|</span>
+                사업자 등록번호 : 111-22-33333
+              </p>
+              <p>
+                통신판매업 신고 : 제1111-세종연동-00015호
+                <a href="#">[사업자정보확인]</a>
+              </p>
+              <p>
+                전화 : 044-864-2533 <span>|</span> 팩스 : 123-456-7894
+                <span>|</span> 이메일 : sejongagro@hanmail.net
+              </p>
+              <p>
+                주소 : 30067 세종특별자치시 연동면 청연로 380 세종농자재농약마트
+              </p>
+              <p>개인정보관리책임자 : 김책임(sejongagro@hanmail.net)</p>
+              <p class="footer-copy">
+                Copyright © 세종농자재농약마트. All rights reserved.
+              </p>
+
+              <div class="footer-ksnet-box">
+                <div class="footer-ksnet-badge">KSNET</div>
+                <div class="footer-ksnet-text">
+                  <p class="ksnet-title">구매안전 서비스</p>
+                  <p>고객님은 안전거래를 위해 현금등으로 결제시</p>
+                  <p>
+                    저희 쇼핑몰이 가입한 PG에스크로 구매안전서비스를 이용하실 수
+                    있습니다.
+                  </p>
+                  <p class="ksnet-id">결제대행계약증서 등록번호 00-002-00003</p>
+                </div>
+                <a href="#" class="footer-ksnet-btn"
+                  >서비스 가입사실 확인 &gt;</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
